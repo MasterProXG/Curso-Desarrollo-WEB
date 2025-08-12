@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redes | Portafolio Gustavo Paz</title>
+  <meta name="description" content="Proyectos desarrollados por Gustavo Adolfo Paz Contreras, estudiante de Mercadotecnia y Ventas.">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="img/PersonalLog.png" type="image/png">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+
+  <header class="barra">
+    <div class="logo">
+      <img src="img/PersonalLog.png" alt="Foto de Perfil" width="50" height="50">
+      <h1 class="nombre">Redes Sociales</h1>           
+    </div>
+    
+    <!-- MENÚ -->
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="index.html" title="Inicio">
+          <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li><a href="Estudios.html">Estudios</a></li>
+        <li><a href="Proyectos.html">Proyectos</a></li>
+        <li><a href="Redes.html">Redes Sociales</a></li> 
+      </ul>
+    </nav>
+
+    <!-- MODO OSCURO -->
+
+    <div class="modo-oscuro">
+      <label class="switch">
+        <input type="checkbox" id="modo-switch">
+        <span class="slider"></span>            
+      </label>
+      <span class="texto-switch">Modo Oscuro</span>
+    </div>
+  </header>
+
+  <!-- BOTÓN HAMBURGUESA -->
+
+  <button class="hamburguesa" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"
+   onclick="toggleMenu()">☰</button>
+
+  <!-- CONTENIDO PRINCIPAL -->
+
+  <main>
+    <section class="redes-sociales" id="redes-sociales">
+      <h2>Redes Sociales</h2>
+      <ul class="lista-redes">
+        <li>
+          <a href="https://www.facebook.com/By.GuzGuz" target="_blank">
+            <i class="fab fa-facebook-square"></i> Facebook
+          </a>
+          <span class="usuario">@by.guzguz</span>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/by.guzguz" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <span class="usuario">@by.guzguz</span>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@by_guzguz" target="_blank">
+            <i class="fab fa-tiktok"></i> TikTok
+          </a>
+          <span class="usuario">@by_guzguz</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="info-footer">
+        <p>© 2025 Gustavo Adolfo Paz Contreras</p>
+        <p>Licenciatura en Mercadotecnia y Ventas | Portafolio Personal</p>
+        <p>El contenido de este sitio no puede ser reproducido sin autorización previa.</p>       
+      </div>
+    </footer>
+
+  <!-- ARCHIVO JS -->
+   
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>

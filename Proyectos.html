@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos | Portafolio Gustavo Paz</title>
+  <meta name="description" content="Proyectos desarrollados por Gustavo Adolfo Paz Contreras, estudiante de Mercadotecnia y Ventas.">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="img/PersonalLog.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+
+  <header class="barra">
+    <div class="logo">
+      <img src="img/PersonalLog.png" alt="Foto de Perfil" width="50" height="50">
+      <h1 class="nombre">Proyectos</h1>
+    </div>
+
+  <!-- MENÚ -->
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="index.html" title="Inicio">
+          <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li><a href="Estudios.html">Estudios</a></li>
+        <li><a href="Proyectos.html">Proyectos</a></li>
+        <li><a href="Redes.html">Redes Sociales</a></li> 
+      </ul>
+    </nav>
+
+   <!-- MODO OSCURO -->
+
+    <div class="modo-oscuro">
+      <label class="switch">
+        <input type="checkbox" id="modo-switch">
+        <span class="slider"></span>
+      </label>
+      <span class="texto-switch">Modo Oscuro</span>
+    </div>
+  </header>
+
+   <!-- BOTONO DE HAMBURGUESA -->
+
+  <button class="hamburguesa" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"
+   onclick="toggleMenu()">☰</button>
+
+   <!-- CONTENIDO PRINCIPAL -->
+
+  <main>
+
+    <!-- PROYECTOS -->
+
+  <section class="proyectos contenedor-seccion" id="proyectos">
+    <h2>Proyectos</h2>
+
+    <div class="contenedor-proyectos">
+
+      <!-- GALERIA 1 PROYECTO 1 -->
+
+      <a href="#" class="proyecto-trigger"
+         data-images="img/PIMG1.JPG,IMG_GAL_1/IMG1_GAL1.JPG,IMG_GAL_1/IMG2_GAL1.JPG,IMG_GAL_1/IMG3_GAL1.WEBP"
+         aria-haspopup="dialog" aria-controls="galeria-modal">
+        <div class="proyecto">
+          <img src="img/PIMG1.JPG" alt="Proyecto PT 2017">
+          <h3>Editor de video y fotos para el PT</h3>
+          <p><i>Me dediqué a la edición de fotos y videos del Partido del Trabajo durante la campaña electoral del 2017.</i></p>
+        </div>
+      </a>
+
+      <!-- GALERIA 2 PROYECTO 2 -->
+
+      <a href="#" class="proyecto-trigger"
+         data-images="img/PIMG2.jpg,IMG_GAL_2/IMG1_GAL2.JPG,IMG_GAL_2/IMG2_GAL2.JPEG,IMG_GAL_2/IMG3_GAL3.JPG"
+         aria-haspopup="dialog" aria-controls="galeria-modal">
+        <div class="proyecto">
+          <img src="img/PIMG2.jpg" alt="Refaccionaria Sakura">
+          <h3>Encargado del área de imagen en Refaccionaria Sakura</h3>
+          <p><i>Trabajé como encargado del área de imagen y ventas en línea para la empresa Multipartes del Sur durante 4 años.</i></p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+   <!-- Modal de galería -->
+    
+    <div class="lightbox" id="galeria-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close="true"></div>
+
+      <div class="lightbox-content" role="document">
+        <button class="lightbox-close" type="button" aria-label="Cerrar galería" data-close="true">✕</button>
+
+        <div class="lightbox-viewport">
+          <img id="lightbox-image" alt="Imagen de proyecto" />
+        </div>
+
+        <div class="lightbox-controls">
+          <button class="lightbox-prev" type="button" aria-label="Imagen anterior">‹</button>
+          <span class="lightbox-indicator" id="lightbox-indicator">1 / 1</span>
+          <button class="lightbox-next" type="button" aria-label="Imagen siguiente">›</button>
+        </div>
+      </div>
+    </div>
+
+   <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="info-footer">
+        <p>© 2025 Gustavo Adolfo Paz Contreras</p>
+        <p>Licenciatura en Mercadotecnia y Ventas | Portafolio Personal</p>
+        <p>El contenido de este sitio no puede ser reproducido sin autorización previa.</p>       
+      </div>
+    </footer>
+
+    <!-- ARCHIVO JS -->
+
+      <script src="js/scripts.js"></script>
+</body>
+</html>

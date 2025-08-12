@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Personal</title>
+  <meta name="description" content="Portafolio personal de Gustavo Adolfo Paz Contreras, estudiante de Mercadotecnia y Ventas.">
+  <meta name="author" content="Gustavo Adolfo Paz Contreras">
+  <meta name="keywords" content="portafolio, estudiante, mercadotecnia, ventas, diseño, tecnología, fotografía, edición de imágenes, curriculum vitae, CV, catálogo en línea">
+  <link rel="icon" href="img/PersonalLog.png" type="image/png">
+  <link rel="stylesheet" href="css/estilos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL --> 
+
+  <header class="barra">
+    <div class="logo">
+      <img src="img/PersonalLog.png" alt="Foto de Perfil" width="50" height="50">
+      <h1 class="nombre">Portafolio personal</h1>           
+    </div>   
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="index.html" title="Inicio">
+          <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li><a href="Estudios.html">Estudios</a></li>
+        <li><a href="Proyectos.html">Proyectos</a></li>
+        <li><a href="Redes.html">Redes Sociales</a></li> 
+      </ul>
+    </nav>
+
+    <!-- MODO OSCURO -->
+
+    <div class="modo-oscuro">
+      <label class="switch">
+        <input type="checkbox" id="modo-switch">
+        <span class="slider"></span>            
+      </label>
+      <span class="texto-switch">Modo Oscuro</span>
+    </div>
+  </header>
+
+  <!-- BOTÓN HAMBURGUESA -->
+
+  <button class="hamburguesa" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"
+   onclick="toggleMenu()">☰</button>
+
+  <!-- CONTENIDO -->
+
+  <main>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+     
+    <section class="sobre-mi contenedor-seccion" id="sobre-mi">
+      <div class="contenido-sobre-mi">
+        <img src="img/Foto_Sobre_Mi.png" alt="Gustavo Adolfo Paz Contreras" class="foto-sobre-mi" width="20%">
+        <div class="texto-sobre-mi">
+          <h2>Sobre mí</h2>
+          <p>¡Hola👋! soy Gustavo Adolfo, actualmente estudio la Licenciatura en Mercadotecnia y Ventas, me apasiona el diseño, la tecnología y la creación de contenido digital. Tengo experiencia en edición de imágenes, fotografía de productos, reparación y mantenimiento de equipos de cómputo así como en la gestión de catálogos en línea a gran escala en plataformas como Mercado Libre y Amazon.
+Actualmente tengo 24 años, cuento con conocimientos básicos de inglés. En mi tiempo libre disfruto de la fotografía, el diseño gráfico y la creación de contenido visual y multimedia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATOS (OCULTAR) PENDIENTE ELIMINAR -->
+
+    <section class="datos-sobre-mi" id="datos-sobre-mi" style="display: none;">
+      <h2>Datos personales</h2>
+      <ul class="lista-datos">
+        <li><strong>Edad:</strong> 24 años</li>
+        <li><strong>Hobbies:</strong> Fotografía, edición de imágenes, reparación de equipos de cómputo, diseño gráfico y creación de contenido digital.</li>
+        <li><strong>Idiomas:</strong> Español, Inglés (básico)</li>
+      </ul>
+    </section>
+
+    <!-- CONTACTO -->
+     
+    <section class="contacto" id="contacto">
+      <h2>Contáctame por Whatsapp</h2> 
+      <form id="formulario-contacto">
+       <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+       <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email">
+
+       <label for="telefono">Número de teléfono</label>
+        <input type="tel" id="telefono" name="telefono" maxlength="10" pattern="\d{10}">
+
+       <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+      <div id="error-mensaje"></div>
+
+      <button type="submit">Enviar por Whatsapp</button>
+
+     </form>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="info-footer">
+        <p>© 2025 Gustavo Adolfo Paz Contreras</p>
+        <p>Licenciatura en Mercadotecnia y Ventas | Portafolio Personal</p>
+        <p>El contenido de este sitio no puede ser reproducido sin autorización previa.</p>       
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ARCHIVO JS -->
+   
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
